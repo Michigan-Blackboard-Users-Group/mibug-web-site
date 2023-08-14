@@ -5,6 +5,14 @@ html, body {
 	font-family: 'Open Sans', sans-serif !important;
 }
 
+a[href] {
+	text-decoration: none;
+}
+
+a[href]:hover {
+	text-decoration: underline;
+}
+
 img.logo-small {
 	width: 10rem;	
 }
@@ -19,15 +27,16 @@ img.logo-large {
 }
 
 section.resources {
-	margin-top: 2rem;
+	margin-top: 0rem;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 	gap: 1rem;
-	padding: 1rem;
+	padding: 2rem;
 }
 
 section.resources > div.card {
 	background: var(--bs-gray-100);
+	margin: 1rem;
 }
 
 section.resources div.card-body {
@@ -83,6 +92,28 @@ section.resources article summary {
 	transform: rotate(-15deg);
 	font-size: 30vw;
 	text-transform: uppercase;
-	opacity: 0.1;
+	opacity: 0.05;
 	font-family: "Saira Stencil One", cursive;
+}
+
+footer {
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 0.8rem;
+	color: rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 767.98px) {
+	section.resources {
+		padding: 1rem;
+		gap: 2rem;
+		margin-top: 1rem;
+
+	}	
+	
+	section.resources > div.card {
+		margin: 0rem;
+	}
+
 }
