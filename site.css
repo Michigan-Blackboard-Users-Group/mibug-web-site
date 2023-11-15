@@ -83,7 +83,7 @@ section.resources article summary {
 	bottom: 0;
 	left: 0;
 	right: 0;	
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 }
